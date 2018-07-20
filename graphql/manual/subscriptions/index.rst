@@ -105,6 +105,7 @@ You can turn any query into a subscription by simply replacing ``query`` with ``
 
 All the concepts of :doc:`queries <../queries/index>` hold true with subscriptions.
 
+
 Check out:
 
 * :doc:`Simple Object Queries <../queries/simple-object-queries>`
@@ -116,3 +117,8 @@ Check out:
 * :doc:`Multiple Queries in a Request <../queries/multiple-queries>`
 * :doc:`Aggregations in Queries <../queries/aggregations>`
 * :doc:`Control access to certain data<../queries/control-access>`
+
+Protocol
+--------
+
+Hasura uses the `GraphQL over Websocket Protocol <https://github.com/apollographql/subscriptions-transport-ws/blob/master/PROTOCOL.md>`_ by the `apollographql/subscriptions-transport-ws <https://github.com/apollographql/subscriptions-transport-ws>`_ library for sending and receiving events.
